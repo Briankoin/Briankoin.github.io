@@ -5,56 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
     <div class="container">
-        
-    <header>
-<img src="images/logo-adare-restaurant.png" alt="logo of restaurant">
-    </header>
-
-    <nav>
-        <a href="index.html">HOME</a>
-        <a href="menu.html" target="_blank">MENU</a>
-        <a href="order.html" target="_blank">ORDER</a>
-        <a href="feedback.html" target="_blank">FEEDBACK</a>
-
-    </nav>
-
-    <main>
-<h1>Let's meat</h1>
-<p>We love sharing good and affordable meals. We bring great passion to cook good food with all our hearts With dishes that are carefullly designed to bring you a truly satisfying food experience that you are sure to always leave you salivating.</p>
-<map name="Kenya"></map>
-
-    </main>
-    <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d6708.281417804715!2d36.83611995854369!3d-1.3147172641379752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMTgnNTYuMiJTIDM2wrA1MCcyMC42IkU!5e0!3m2!1sen!2ske!4v1685715680417!5m2!1sen!2ske" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-    
-
-    <footer>
-        <div class="row">
-            <div class="column">
-                <p>P.O.Box 433-00502</p>
-                <p>Tel:0718 203 162</p>
-                <p>Email:<a href = "mailto: abc@example.com">adare-restaurant@gmail.com</a></p>
-                <p>Copyright©Adare restaurant</p>
-            </div>
-           
-            <div class="column">
-                <p>Sign up for updates:</p>
-                <input type="email">
-                <button class="send">Send</button>
-                
-
-
-
+<header>
+    <a href="index.html">HAND IN HAND</a>
+</header>
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="ourstory.html" target="_blank">OUR STORY</a>
+    <a href="contact-us.html" target="_blank">CONTACT US</a>
+</nav>
+<main>
+    <div class="image-container">
+        <div class="mySlides fade">
+            <img src="images/pexels-akil-mazumder-1072824.jpg">
+            <div class="text">
+                <p>PLANT TREES</p>
+                <p>RESTORE HOPE.</p>
+        <p>Planting trees is a legacy of yourself, a loved one and the planet. Each ring on your tree marks another year where you made a difference.</p>
+        <p>Join the effort to restore the world's most diverse and threatened places. Together, we can create a forest! Every tree matters - whether you plant one tree or one hundred. Each gets us closer to a healthier planet.</p>
             </div>
           </div>
-       
-       
-       
-
-    </footer>
+          <div class="mySlides fade">
+            <img src="images/pexels-ron-lach-9543745 (1).jpg">
+            <div class="text">
+                <p>LITTERING</p>
+                <p>People aren't usually aware that they are not the only people living on this planet. Humans usually litter garbage anywhere they feel like.</p>
+                <p>This garbage are encountered by animals and they may either ingest them without knowing or lead to harming them on there physical body</p>
+            </div>
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="images/pexels-anna-tarazevich-6796897.jpg">
+            <div class="text">
+                <p>DEFORESTATION.</p>
+                <p>This leads to wild animals to lack a habitat to live in. They will end up dying since they will move to a different area and their bodies can't adapt leading Starvation</p>
+                <p></p>                                
+            </div>
+          </div>
+     <!-- <img class="mySlides" src="images/pexels-akil-mazumder-1072824.jpg" alt=""> -->
+     <!-- <img class="mySlides" src="images/pexels-ron-lach-9543732.jpg"> -->
+    <!-- <img class="mySlides" src="images/pexels-anna-tarazevich-6796897.jpg"> -->
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+     <div class="image-text">
+        <!-- <p>PLANT TREES.</p>
+        <p>RESTORE HOPE.</p>
+        <p>Planting trees is a legacy of yourself, a loved one and the planet. Each ring on your tree marks another year where you made a difference.</p>
+        <p>Join the effort to restore the world's most diverse and threatened places. Together, we can create a forest! Every tree matters - whether you plant one tree or one hundred. Each gets us closer to a healthier planet.</p> -->
+    </div>
+    </div>
+</main>
 </div>
+<footer>
+    <div class="footer">
+      <div class="address">
+        <p>P.O.Box 433-00502</p>
+        <p>Tel:0718 203 162</p>
+        <p>Email:<a href = "mailto:koinbrian@gmail.com">handinhand@gmail.com</a></p> 
+        <p>Inspiring Hope, Dignity and Choice @2023 Hand in Hand EA. All Rights Reseved</p>
+        
+      </div>
+      <div class="updates">
+        <p>Sign up for updates:</p>
+        <input class="input" type="text">
+        <button class="send" onclick="handleclick()">SEND</button>
+      </div>
+
+    </div>
+    <!-- <p>HAND IN HAND</p>
+    <p>Inspiring Hope, Dignity and Choice @2023 Hand in Hand EA. All Rights Reseved</p> -->
+</footer>
+<script>
+    let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            function handleclick() {
+      alert("Updates will be sent");
+    }
+</script>
 </body>
 </html>
